@@ -120,3 +120,8 @@ brew cask install microsoft-office
 ##sudo chown -R ${USER}:staff ~/.ssh
 ##sudo chown -R ${USER}:staff ~/.gnupg
 
+#install skype
+brew cask install skype
+
+#install visual studio code
+brew cask install visual-studio-code
