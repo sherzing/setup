@@ -74,12 +74,6 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 #set zsh as default
 sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 
-#install pycharm
-brew cask install pycharm-ce
-
-#install phpstorm
-brew cask install phpstorm
-
 #install intellij
 brew cask install intellij-idea-ce
 
@@ -96,7 +90,6 @@ brew cask install dropbox
 brew cask install google-drive
 
 
-#atlas
 #install virtualbox
 brew cask install virtualbox
 
@@ -109,8 +102,6 @@ brew cask install slack
 #install commandline tool for app store
 brew install mas
 
-#install office
-brew cask install microsoft-office
 
 
 
@@ -125,3 +116,15 @@ brew cask install skype
 
 #install visual studio code
 brew cask install visual-studio-code
+
+# video
+# youtube-dl
+brew install youtube-dl
+
+# vlc
+brw cask install vlc
+
+## network stuff
+# siege
+brew install siege
+
