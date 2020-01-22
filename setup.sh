@@ -10,100 +10,46 @@ brew tap caskroom/cask
 
 # settings
 #allow untrusted sources
-sudo spctl --master-disable
+#sudo spctl --master-disable
 
 # expand save disalog by default
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+#defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+#defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
 #move dock to right side
-defaults write com.apple.dock orientation right && killall -HUP Dock
-defaults write com.apple.Dock autohide -bool TRUE; killall Dock
+#defaults write com.apple.dock orientation right && killall -HUP Dock
+#defaults write com.apple.Dock autohide -bool TRUE; killall Dock
 # right tackpad for right click
 #defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+#defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
+#defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
-#install cafeine
-brew cask install caffeine
-
-#install bartender
-brew cask install bartender
-
-#install atom
-brew cask install atom
-
-#install vlc
-brew cask install vlc
-
-#install charles
-
-#install scala & sbt
-brew install scala sbt
-
-#install keepassx
-brew cask install keepassx
-
-
-#install iterm
-brew cask install iterm2
-
-#install slate
-brew cask install slate
-
-#install chrome
+#install browsers
 brew cask install google-chrome
-
-#install java
-brew cask install java
-
-#install alfred
-brew cask install alfred
-
-#install firefox
 brew cask install firefox
 
+#productivity
+brew cask install iterm2
+brew cask install alfred
+brew cask install evernote
+brew cask install rectangle
+brew cask install keepassx
+brew cask install atom
+brew cask install bartender
+brew cask install caffeine
+brew cask install dropbox
+brew cask install google-drive
+
 #install zsh
-brew install zsh
-brew install zsh-completions
+#brew install zsh
+#brew install zsh-completions
 #install oh my zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
-#set zsh as default
-sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
-
-#install intellij
-brew cask install intellij-idea-ce
-
-#install docker
-brew cask install docker docker-toolbox
-
-#install evernote
-brew cask install evernote
-
-#install dropbox
-brew cask install dropbox
-
-#install google-drive
-brew cask install google-drive
-
-
-#install virtualbox
-brew cask install virtualbox
-
-#install python3
-brew install python3
-
-#install slack
-brew cask install slack
-
 #install commandline tool for app store
 brew install mas
-
-
-
 
 # change permissions for ssh files
 ##chmod 700 ~/.ssh
@@ -113,18 +59,25 @@ brew install mas
 
 #install skype
 brew cask install skype
+brew cask install slack
 
-#install visual studio code
+#install development tools
 brew cask install visual-studio-code
+brew cask install robo-3t
+brew tap mongodb/brew
+brew install mongodb-community@4.2
+brew install flutter
+brew cask install postman
+brew cask install intellij-idea-ce
+brew cask install docker docker-toolbox
+brew cask install java
 
 # video
-# youtube-dl
 brew install youtube-dl
-
-# vlc
 brw cask install vlc
 
 ## network stuff
 # siege
 brew install siege
+
 
